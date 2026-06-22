@@ -4,3 +4,23 @@
     height: 100 px;
     background-color: teal
 }
+#seleccionar-mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tarjeta-de-mokepon{
+    width: 100px;
+    height: 100px;
+    background: rgb(25, 125, 162);
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px solid hotpink;
+}
+
+input {
+    display:none
+}
