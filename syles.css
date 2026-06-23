@@ -1,26 +1,47 @@
-.titulo {
-    color:red;
-    width: 300px;
-    height: 100 px;
-    background-color: teal
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body{
+    font-family: "Ubuntu", sans-serif;
+    background-color: #041562 ;
 }
 #seleccionar-mascota{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
-.tarjeta-de-mokepon{
-    width: 100px;
-    height: 100px;
-    background: rgb(25, 125, 162);
-    padding: 10px;
-    box-sizing: border-box;
-    margin: 10px;
-    border: 1px solid hotpink;
+.titulo {
+    color:white;
+        font-size: 32px;
 }
 
+.subtitulo{
+    color:white;
+    font-size: 20px;
+}
+
+.tarjetas{
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-de-mokepon{
+    width: 180px;
+    height: 100px;
+    background: #006bf6;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+.tarjeta-de-mokepon img{
+        width: 80px;
+}
 input {
     display:none
 }
