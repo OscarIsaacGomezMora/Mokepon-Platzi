@@ -34,7 +34,7 @@ function seleccionarMascotaJugador(){
     
     let sectionSeleccionarAtaque = document.getElementById('seleccionar-ataque')
 
-    sectionSeleccionarAtaque.style.display = 'block'
+    sectionSeleccionarAtaque.style.display = 'flex'
 
     
 
@@ -137,7 +137,21 @@ function revisarVidas (){
 
 function crearMensaje (resultado) {
     //Busca el elemento que tiene la etiqueta o id mensajes
-    let sectionMensajes = document.getElementById ('mensajes')
+    let sectionMensajes = document.getElementById ('resultado')
+    let sectionMensajes = document.getElementById ('ataques-Del-Jugador')
+    let sectionMensajes = document.getElementById ('ataques-Del-Enemigo')
+
+    let notificacion = document.createElement ('p')
+    let nuevoAtaqueDelJugador = document.createElement ('p')
+    let nuevoAtaqueDelEnemigo = document.createElement ('p')
+    
+    notificacion.innerHTML = resultado
+    nuevoAtaqueDelJugador.innerHTML = ataqueJugador
+    nuevoAtaqueDelEnemigo.innerHTML = ataqueEnemigo
+
+
+
+
     //quiero que seas un párrafo totalmente vacío
     let parrafo = document.createElement ('p')
     //innerHTML es el marcador para escribir adentro.

@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charser="utf-8"/>
-        <title> CHUPAMON</title>
+        <title> Mokepon</title>
         <script src="chupamon.js"></script>
         <link rel="stylesheet" href="./syles.css">
     </head>
@@ -38,22 +38,36 @@
         </section>
 
         <section id="seleccionar-ataque">
-            <h1 class="titulo">CHUPAMON, ATRAPALOS TODOS</h1>
-            <h2>Elige tu ataque: </h2>
-            <P>Tu mascota <span id="mascota-jugador"></span> tiene <span id ='vidas-jugador'>3</span> vidas</P>
-            <P>La mascota <span id="mascota-enemigo"></span> del enemigo tiene <span id ='vidas-enemigo'>3</span> vidas</P>
-
-            <P>
-                <button id="boton-fuego">Fuego</button>
-                <button id="boton-agua">Agua</button>
-                <button id="boton-tierra">Tierra</button>                        
-            </P>
-        </section>        
-        <section id="mensajes">
+            <h1 class="titulo">Mokepon</h1>
             
-        </section>
-        <section id="reiniciar">
-            <button id="boton-reiniciar">Reiniciar</button>
-        </section>
+            <h2 class="subtitulo">Elige a tu mascota: </h2>
+           
+            <div>
+                <button id="boton-fuego" class="boton-de-ataque">Fuego</button>
+                <button id="boton-agua" class="boton-de-ataque">Agua</button>
+                <button id="boton-tierra" class="boton-de-ataque">Tierra</button>                        
+            </div>
+
+            <div>
+                <section id="mensajes">           
+                </section>
+
+                <div id="resultado"></div>
+                <div id="ataques-Del-Jugador"></div>
+                <div id="ataques-Del-Enemigo"></div>
+
+                
+                <section id="reiniciar">
+                    <button id="boton-reiniciar">Reiniciar</button>
+                </section>
+            </div>
+
+            <div>
+                <P>Tu mascota <span id="mascota-jugador"></span> tiene <span id ='vidas-jugador'>3</span> vidas</P>
+                <P>La mascota <span id="mascota-enemigo"></span> del enemigo tiene <span id ='vidas-enemigo'>3</span> vidas</P>
+            </div>
+                        
+        </section>        
+        
     </body>
 </html>
